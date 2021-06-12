@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TimingCell" id="gTV-IL-0wX" customClass="TimingCell" customModule="fitness_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="114" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="114" height="40"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOm-VN-6QO">
+                        <rect key="frame" x="57" y="36" width="57" height="2"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="Ezk-rw-fId"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Morning]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m50-xx-yHh">
+                        <rect key="frame" x="38.5" y="0.0" width="75.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="m50-xx-yHh" secondAttribute="trailing" id="IG8-Fv-dE4"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="nOm-VN-6QO" secondAttribute="bottom" constant="2" id="KKq-qe-yf9"/>
+                <constraint firstItem="m50-xx-yHh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Tct-Xs-scU"/>
+                <constraint firstItem="nOm-VN-6QO" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="1:2" id="XVz-Ht-mOT"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="nOm-VN-6QO" secondAttribute="trailing" id="leI-ue-GTR"/>
+            </constraints>
+            <size key="customSize" width="114" height="40"/>
+            <connections>
+                <outlet property="selectionIndicator" destination="nOm-VN-6QO" id="f0Z-8U-EOX"/>
+                <outlet property="timingLabel" destination="m50-xx-yHh" id="Tmr-jW-tbC"/>
+            </connections>
+            <point key="canvasLocation" x="150.72463768115944" y="75.669642857142847"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

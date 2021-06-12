@@ -13,6 +13,14 @@
 		5AA0E71F2674DD870048C51E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AA0E71D2674DD870048C51E /* Main.storyboard */; };
 		5AA0E7212674DD8A0048C51E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AA0E7202674DD8A0048C51E /* Assets.xcassets */; };
 		5AA0E7242674DD8A0048C51E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AA0E7222674DD8A0048C51E /* LaunchScreen.storyboard */; };
+		5AA0E72D2674E5920048C51E /* TimingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0E72B2674E5920048C51E /* TimingCell.swift */; };
+		5AA0E72E2674E5920048C51E /* TimingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AA0E72C2674E5920048C51E /* TimingCell.xib */; };
+		5AA0E7342674F02D0048C51E /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0E7322674F02D0048C51E /* TaskCell.swift */; };
+		5AA0E7352674F02D0048C51E /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AA0E7332674F02D0048C51E /* TaskCell.xib */; };
+		5AA0E7372674F8050048C51E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0E7362674F8050048C51E /* Task.swift */; };
+		5AA0E7392674F8570048C51E /* task_data.json in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0E7382674F8570048C51E /* task_data.json */; };
+		5AA0E73B2674F8AE0048C51E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0E73A2674F8AE0048C51E /* Extensions.swift */; };
+		5AA0E73C2674FBA00048C51E /* task_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AA0E7382674F8570048C51E /* task_data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,13 @@
 		5AA0E7202674DD8A0048C51E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AA0E7232674DD8A0048C51E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AA0E7252674DD8A0048C51E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AA0E72B2674E5920048C51E /* TimingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingCell.swift; sourceTree = "<group>"; };
+		5AA0E72C2674E5920048C51E /* TimingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimingCell.xib; sourceTree = "<group>"; };
+		5AA0E7322674F02D0048C51E /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		5AA0E7332674F02D0048C51E /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
+		5AA0E7362674F8050048C51E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		5AA0E7382674F8570048C51E /* task_data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = task_data.json; sourceTree = "<group>"; };
+		5AA0E73A2674F8AE0048C51E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +74,17 @@
 				5AA0E7172674DD870048C51E /* AppDelegate.swift */,
 				5AA0E7192674DD870048C51E /* SceneDelegate.swift */,
 				5AA0E71B2674DD870048C51E /* ViewController.swift */,
+				5AA0E73A2674F8AE0048C51E /* Extensions.swift */,
 				5AA0E71D2674DD870048C51E /* Main.storyboard */,
 				5AA0E7202674DD8A0048C51E /* Assets.xcassets */,
 				5AA0E7222674DD8A0048C51E /* LaunchScreen.storyboard */,
 				5AA0E7252674DD8A0048C51E /* Info.plist */,
+				5AA0E72B2674E5920048C51E /* TimingCell.swift */,
+				5AA0E7362674F8050048C51E /* Task.swift */,
+				5AA0E7382674F8570048C51E /* task_data.json */,
+				5AA0E72C2674E5920048C51E /* TimingCell.xib */,
+				5AA0E7322674F02D0048C51E /* TaskCell.swift */,
+				5AA0E7332674F02D0048C51E /* TaskCell.xib */,
 			);
 			path = "fitness-app";
 			sourceTree = "<group>";
@@ -124,8 +146,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AA0E73C2674FBA00048C51E /* task_data.json in Resources */,
 				5AA0E7242674DD8A0048C51E /* LaunchScreen.storyboard in Resources */,
+				5AA0E7352674F02D0048C51E /* TaskCell.xib in Resources */,
 				5AA0E7212674DD8A0048C51E /* Assets.xcassets in Resources */,
+				5AA0E72E2674E5920048C51E /* TimingCell.xib in Resources */,
 				5AA0E71F2674DD870048C51E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +163,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AA0E71C2674DD870048C51E /* ViewController.swift in Sources */,
+				5AA0E7392674F8570048C51E /* task_data.json in Sources */,
 				5AA0E7182674DD870048C51E /* AppDelegate.swift in Sources */,
+				5AA0E72D2674E5920048C51E /* TimingCell.swift in Sources */,
 				5AA0E71A2674DD870048C51E /* SceneDelegate.swift in Sources */,
+				5AA0E7342674F02D0048C51E /* TaskCell.swift in Sources */,
+				5AA0E73B2674F8AE0048C51E /* Extensions.swift in Sources */,
+				5AA0E7372674F8050048C51E /* Task.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,12 +317,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5S9KM8KVS;
 				INFOPLIST_FILE = "fitness-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.asista.enterprise.fitness-app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.asista.enterprise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,12 +336,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5S9KM8KVS;
 				INFOPLIST_FILE = "fitness-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.asista.enterprise.fitness-app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.asista.enterprise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
